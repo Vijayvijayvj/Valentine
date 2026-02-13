@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>My Valentine ❤️</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to bottom, #ffafbd, #ffc3a0);
+    text-align: center;
+    color: #333;
+}
+
+header {
+    padding: 60px 20px;
+    background: #ff4d6d;
+    color: white;
+}
+
+header h1 {
+    font-size: 3rem;
+}
+
+section {
+    padding: 40px 20px;
+}
+
+.card {
+    background: white;
+    max-width: 900px;
+    margin: auto;
+    padding: 30px;
+    border-radius: 25px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.heart {
+    font-size: 4rem;
+    animation: beat 1s infinite;
+}
+
+@keyframes beat {
+    0%,100% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+}
+
+/* Love Messages */
+.love-msg {
+    font-size: 1.2rem;
+    margin: 15px 0;
+}
+
+/* Gallery */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.photo-box {
+    position: relative;
+    cursor: pointer;
+}
+
+.photo-box img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255,77,109,0.9);
+    color: white;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+}
+
+.hidden-msg {
+    display: none;
+    margin-top: 10px;
+    color: #d62828;
+    font-weight: bold;
+}
+
+/* Button */
+button {
+    background: #ff4d6d;
+    border: none;
+    color: white;
+    padding: 14px 30px;
+    border-radius: 30px;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #e63950;
+}
+
+footer {
+    padding: 20px;
+    font-size: 0.9rem;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Happy Valentine’s Day ❤️</h1>
+    <p>To the one who owns my heart 💘</p>
+</header>
+
+<!-- LOVE LETTER -->
+<section>
+<div class="card">
+    <div class="heart">❤️</div>
+    <p class="love-msg">You are not just my boyfriend, you are my home 🫶</p>
+    <p class="love-msg">Every smile of yours makes my day brighter ✨</p>
+    <p class="love-msg">With you, even silence feels beautiful 💞</p>
+    <p class="love-msg">I promise to stand with you in every phase of life 🤍</p>
+    <p class="love-msg">No matter what happens, I choose YOU – always 💍</p>
+</div>
+</section>
+
+<!-- GALLERY -->
+<section>
+<div class="card">
+    <h2>Our Memories 📸</h2>
+    <p>Tap on each photo 💌</p>
+
+    <div class="gallery">
+
+        <div class="photo-box" onclick="openMsg(this)">
+            <img src="C:\Users\HP\OneDrive\Desktop\HTML\Valentine\images\birthday.jpeg">
+            <div class="overlay">Open Me 💌</div>
+            <div class="hidden-msg">This moment made me fall for you even more ❤️</div>
+        </div>
+
+        <div class="photo-box" onclick="openMsg(this)">
+            <img src="C:\Users\HP\OneDrive\Desktop\HTML\Valentine\images\rk.jpeg">
+            <div class="overlay">Open Me 💌</div>
+            <div class="hidden-msg">My favorite memory with my favorite person 🥰</div>
+        </div>
+
+        <div class="photo-box" onclick="openMsg(this)">
+            <img src="C:\Users\HP\OneDrive\Desktop\HTML\Valentine\images\cruncherys.jpeg">
+            <div class="overlay">Open Me 💌</div>
+            <div class="hidden-msg">Forever starts with moments like this 💞</div>
+        </div>
+
+        <div class="photo-box" onclick="openMsg(this)">
+            <img src="C:\Users\HP\OneDrive\Desktop\HTML\Valentine\images\pongal.jpeg">
+            <div class="overlay">Open Me 💌</div>
+            <div class="hidden-msg">I need our life to begin like this 🫂</div>
+        </div>
+
+        <div class="photo-box" onclick="openMsg(this)">
+            <img src="C:\Users\HP\OneDrive\Desktop\HTML\Valentine\images\iv.jpeg">
+            <div class="overlay">Open Me 💌</div>
+            <div class="hidden-msg">Wanna cherish every moment of our life like this 😘</div>
+        </div>
+
+        <div class="photo-box" onclick="openMsg(this)">
+            <img src="C:\Users\HP\OneDrive\Desktop\HTML\Valentine\images\hand.jpeg">
+            <div class="overlay">Open Me 💌</div>
+            <div class="hidden-msg">I need to live my last breath by holding your hand like this 🤝</div>
+        </div>
+
+</div>
+</section>
+<section>
+<div class="card">
+   <div class="heart hug">🫂</div>
+    <p class="love-msg">Please dont avoid me at any situation for any problem🥺</p>
+    <p class="love-msg">Your absence makes me do something unwanted one🪦</p>
+    <p class="love-msg">I didn't expect you to talk to me all times, but please try to have a small happy talks with me🥹</p>
+    <p class="love-msg">Please think of my happiness too..., 😩please I need some small happiness with you💞</p>
+    <p class="love-msg">I wanna enjoy every single second with you, please do this alone🙏</p>
+</div>
+</section>
+
+
+<!-- AUDIO -->
+<section>
+<div class="card">
+    <h2>Listen With Your Heart 🎶</h2>
+    <p>This song reminds me of you 💕</p>
+    <audio controls>
+        <source src="C:\Users\HP\OneDrive\Desktop\HTML\Valentine\unnale.mp3" type="audio/mpeg">
+    </audio>
+
+    <p style="margin-top:20px;">Happy Valentine's Day my Love 🫶</p>
+    <audio controls>
+        <source src="C:\Users\HP\OneDrive\Desktop\HTML\Valentine\my.ogg" type="audio/mpeg">
+    </audio>
+</div>
+</section>
+
+<!-- FINAL MESSAGE -->
+<section>
+<div class="card">
+    <h2>One Last Thing 💝</h2>
+    <button onclick="alert('I PROMISE...Naa epovum unna kai vida maten🤝.... neeyum enna kai vitratha..please🥹 Naa unaku suit aavena nu enaku theriyala but I love you more than yesterday and less than tomorrow but always u r my constant 💞 Ennoda iruka pidichiruntha vaa kalyanam pannikalaam illana vendam force pannala🫂 ')">
+        Click Me
+    </button>
+</div>
+</section>
+
+<footer>
+    Made with endless love ❤️
+</footer>
+
+<script>
+function openMsg(box) {
+    box.querySelector('.overlay').style.display = 'none';
+    box.querySelector('.hidden-msg').style.display = 'block';
+}
+</script>
+
+</body>
+</html>
